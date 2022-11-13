@@ -1,0 +1,304 @@
+@font-face {
+    font-family: Quasimoda;
+    src: url(../fonts/quasimoda-light.otf);
+}
+:root{
+    --primary: #000;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+}
+
+#sidebar > .inner{
+    min-height: 85%;
+}
+/* Intro */
+
+#intro{
+    background-color: #2c2946;
+}
+
+.inner p.title{ /*paragrafos*/
+    color: #9865dc;
+    font-size: 20px !important;
+    line-height: 1.2;
+    font-family: quasimoda, sans-serif;
+    font-style: normal;
+    font-weight: 200;
+}
+
+.inner h1{
+    font-size: 55px;
+    font-family: quasimoda, sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 1.2;
+}
+
+/* Skills */
+
+.abilities{
+    display: flex;
+    justify-content: space-between;
+    padding: 90px 0;
+}
+
+.abilities .item{
+    display: block;
+    padding: 20px;
+}
+
+.abilities .item h3{
+    color: #2c2946;
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 400;
+    font-family: quasimoda, sans-serif;
+    font-style: normal;
+    font-weight: 200;
+}
+
+.abilities .item p{ /*paragrafos*/
+    color: #2c2946;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.2;
+    font-family: quasimoda, sans-serif;
+    font-style: normal;
+    font-weight: 200;
+}
+
+.abilities .item .icon-trem{
+    font-size: 40px;
+    text-align: center;
+    display: block;
+    margin-bottom: 25px;
+}
+
+/* Projetos */
+
+#two{
+    background-color: #2c2946;
+}
+
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 40px 0;
+}
+
+.projects .item{
+    display: block;
+    padding: 40px 60px;
+    text-align: center;
+}
+
+.projects .divisor{
+    border: solid 1px #9865dc;
+}
+
+.projects .item h3{
+    color: #9865dc;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 24px;
+    font-family: quasimoda, sans-serif;
+    font-style: normal;
+    font-weight: 200;
+}
+
+.projects .item p{
+    padding: 60px 30px;
+    line-height: 1.2;
+    max-width: 350px;
+    margin: 0 auto;
+    font-family: quasimoda, sans-serif;
+    font-style: normal;
+    font-weight: 200;
+}
+
+
+@media (max-width: 941px){
+    .projects .divisor{
+        display: none;
+    }
+    
+    .projects .item:not(:last-child){
+        border-bottom: solid 1px purple;
+    }
+}
+
+/* CV */
+
+#three{
+    background-color: #9865dc;
+}
+
+.cv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40px 0;
+}
+
+.cv .item1{
+    display: block;
+    padding-left: 10px;
+    padding-top: 60px;
+    /*padding: 20px 40px;*/
+    text-align: center;
+    /*max-width: 215px;*/
+}
+
+.cv .item1 h3{
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 17px;
+    font-family: quasimoda, sans-serif;
+    font-style: normal;
+    font-weight: 200;
+
+}
+
+.cv .item1 h4{
+    color: #2c2946;
+    font-size: 14px !important;
+    padding: 40px 3px;
+    padding-top: 0px;
+    line-height: 1.2;
+    max-width: 350px;
+    margin: 0 auto;
+    font-family: quasimoda, sans-serif;
+    font-weight: 200;
+}
+
+.cv .divisor{
+    border: solid 1px #2c2946;
+}
+
+.cv .item2{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 645px;
+    justify-content: space-evenly;
+}
+.cv .item2 p{
+    color: #2c2946;
+    font-size: 16px !important;
+    padding: 40px 30px;
+    line-height: 1.2;
+    max-width: 350px;
+    margin: 0 auto;
+    font-family: quasimoda, sans-serif;
+    font-style: normal;
+    font-weight: 200;
+}
+
+.cv .subitem h4{
+    text-align: left;
+}
+
+
+.cv ul,
+.cv ul.exp li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    max-width: 200px;
+}
+
+.cv ul.exp{
+    margin-left: 25px;
+}
+
+.cv ul.exp li h6{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Quasimoda, sans-serif;;
+}
+
+.cv ul.exp li h6::before{
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #2c2946;
+    position: relative;
+    top: -1px;
+    left: 0;
+    margin-right: 20px;
+}
+
+
+.cv ul.exp li p{
+    margin: 0 !important;
+    padding: 0 !important;
+    margin-left: 28px !important;
+}
+
+.cv-bottom{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+.cv-bottom .subitem{
+    width: 40%;
+}
+
+.cv-bottom ul.lvl{
+    width: 100%;
+}
+
+.cv-bottom ul.lvl h6{
+    font-size: 16px;
+    font-family: Quasimoda, sans-serif;
+    color: #2c2946;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+}
+
+.cv-bottom ul.lvl li .progress{
+    width: 100%;
+    height: 7px;
+    border-radius: 5px;
+    background-color: #824ec7;
+    margin-bottom: 7px;
+    position: relative;
+}
+
+
+.cv-bottom ul.lvl li .progress .bar{
+    content: '';
+    left: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 5px
+}
+
+@media (max-width: 941px){
+    .cv .divisor{
+        display: none;
+    }
+    
+    .cv .item:not(:last-child){
+        border-bottom: solid 1px purple;
+    }
+}
+
+/* Footer */
+#footer{
+    background-color: #2c2946;
+}
