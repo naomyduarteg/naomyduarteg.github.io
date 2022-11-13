@@ -3866,14 +3866,6 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 736px) {
-
-			#sidebar {
-				display: none;
-			}
-
-		}
-
 /* Intro */
 
 	#intro {
@@ -3908,6 +3900,11 @@ input, select, textarea {
 
 			#intro {
 				background-attachment: scroll;
+			}
+
+			#sidebar{
+				height: 7.5rem;
+				padding-top: 10px;
 			}
 
 		}

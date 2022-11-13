@@ -20,6 +20,11 @@
     background-color: #2c2946;
 }
 
+.profile-picture{
+    width: 210px;
+    margin: 0 auto;
+}
+
 .inner p.title{ /*paragrafos*/
     color: #9865dc;
     font-size: 20px !important;
@@ -43,11 +48,13 @@
     display: flex;
     justify-content: space-between;
     padding: 90px 0;
+    flex-wrap: wrap;
 }
 
 .abilities .item{
     display: block;
     padding: 20px;
+    width: 25%;
 }
 
 .abilities .item h3{
@@ -125,7 +132,7 @@
     .projects .divisor{
         display: none;
     }
-    
+
     .projects .item:not(:last-child){
         border-bottom: solid 1px purple;
     }
@@ -140,10 +147,14 @@
 .cv{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding: 40px 0;
 }
 
+.cv .item1,
+.cv .item2{
+    width: 40%;
+}
 .cv .item1{
     display: block;
     padding-left: 10px;
@@ -156,7 +167,7 @@
 .cv .item1 h3{
     text-align: center;
     margin-bottom: 25px;
-    font-size: 17px;
+    font-size: 23px;
     font-family: quasimoda, sans-serif;
     font-style: normal;
     font-weight: 200;
@@ -165,7 +176,7 @@
 
 .cv .item1 h4{
     color: #2c2946;
-    font-size: 14px !important;
+    font-size: 20px !important;
     padding: 40px 3px;
     padding-top: 0px;
     line-height: 1.2;
@@ -191,13 +202,13 @@
 .cv .item2 p{
     color: #2c2946;
     font-size: 16px !important;
-    padding: 40px 30px;
     line-height: 1.2;
     max-width: 350px;
     margin: 0 auto;
     font-family: quasimoda, sans-serif;
     font-style: normal;
     font-weight: 200;
+    margin-left: 10px;
 }
 
 .cv .subitem h4{
@@ -212,10 +223,6 @@
     padding: 0;
     margin-bottom: 20px;
     max-width: 200px;
-}
-
-.cv ul.exp{
-    margin-left: 25px;
 }
 
 .cv ul.exp li h6{
@@ -252,12 +259,21 @@
 }
 
 
+#three .subitem,
 .cv-bottom .subitem{
-    width: 40%;
+    width: 250px;
 }
 
 .cv-bottom ul.lvl{
     width: 100%;
+}
+.cv-bottom ul.lvl li{
+    margin-bottom: 5px;
+}
+
+#three h4,
+.cv-bottom h4{
+    font-size: 22pxem !important;
 }
 
 .cv-bottom ul.lvl h6{
@@ -288,13 +304,26 @@
     border-radius: 5px
 }
 
-@media (max-width: 941px){
+@media (max-width: 1078px){
     .cv .divisor{
         display: none;
     }
-    
     .cv .item:not(:last-child){
         border-bottom: solid 1px purple;
+    }
+    .cv .item1,
+    .cv .item2{
+        width: 80%;
+    }
+    .divisor{
+        display: none !important;
+    }
+}
+
+@media (max-width: 760px){
+    .abilities .item{
+        width: 100%;
+        padding: 0 20%;
     }
 }
 

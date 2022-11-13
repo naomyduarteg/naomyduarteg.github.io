@@ -188,3 +188,9 @@
 			});
 
 })(jQuery);
+
+
+$(document).on('click', 'button[data-url]', function(){
+	let url = $(this).data('url');
+	window.open(url, '_blank').focus();
+});
